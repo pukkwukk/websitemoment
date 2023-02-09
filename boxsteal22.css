@@ -63,7 +63,11 @@ h5 {
   width: 200px;
   margin: 0 auto;
   border-radius: 40px;
-  animation: fadeIn 0.75s ease-in, 1.5s bob ease-in-out infinite, fadeOut 0.5s ease-out 2.5s;
+  animation: fadeIn 0.75s ease-in, 1.5s bob ease-in-out infinite;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease-out;
 }
 
 .content {
