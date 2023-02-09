@@ -15,10 +15,9 @@ function copyServerIP() {
     });
 }
 
-const okButton = document.querySelector('.ok-button');
-okButton.addEventListener('click', function() {
+function okButton() {
   const alertContainer = document.querySelector('.alert-container');
   const content = document.querySelector('.content');
   alertContainer.style.display = 'none';
-  content.classList.remove('backdrop-blur');
-});
+  content.classList.remove('backdrop-blur)
+}
