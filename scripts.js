@@ -4,9 +4,6 @@ function copyServerIP() {
       const alertContainer = document.querySelector('.alert-container');
       const content = document.querySelector('.content');
       alertContainer.style.display = 'block';
-      alertContainer.style.top = '50%';
-      alertContainer.style.left = '50%';
-      alertContainer.style.transform = 'translate(-50%, -50%)';
       content.classList.add('backdrop-blur');
     })
     .catch(err => {
@@ -19,5 +16,4 @@ function okButton() {
   const content = document.querySelector('.content');
   alertContainer.style.display = 'none';
   content.classList.remove('backdrop-blur');
-  alertContainer.classList.add('fadeOut');
 }
