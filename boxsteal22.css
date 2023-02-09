@@ -1,0 +1,137 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: maroon;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Raleway';
+}
+
+h3 {
+  font-family: Itim;
+  color: black;
+  text-align: left;
+}
+
+h5 {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  max-width: 125px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-container {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.alert-container {
+  z-index: 999;
+  display: none;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: calc(50% - 100px);
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 40px;
+  animation: fadeIn 0.75s ease-in, 1.5s bob ease-in-out infinite, fadeOut 0.5s ease-out 2.5s;
+}
+
+.content {
+background-color: lightblue;
+}
+
+.ok-button {
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.backdrop-blur {
+filter: blur(5px);
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bob {
+  0% {
+    transform: translate(-50%, -50%) translateY(0%);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-10%);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0%);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    document.body.classList.remove('blur');
+  }
+}
+
+
+.alert-text {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+top: -15px;
+}
+
+.alert-subtext {
+  color: white;
+  font-size: 14px;
+  top: -50px;
+}
